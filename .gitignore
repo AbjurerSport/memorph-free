@@ -1,0 +1,102 @@
+# Ignore everything by default.
+*
+
+# Keep directory traversal so whitelisted paths below can be reached.
+!*/
+
+# Always ignore local-only directories and artifacts.
+/.claude/
+/.idea/
+/.memorph/
+/target/
+/reference-projects/
+/归档/
+/RUN.md
+/bot
+/bot.*
+/issy
+/issy.*
+/desktop/tauri/.idea/
+/desktop/tauri/.memorph/
+/desktop/tauri/gen/
+/desktop/tauri/target/
+**/__pycache__/
+
+# Root project metadata.
+!/.gitignore
+!/platforms.toml
+!/LICENSE
+!/install.sh
+!/README.md
+!/README_en.md
+!/README_zh.md
+
+# Rust workspace.
+!/rust/
+!/rust/Cargo.toml
+!/rust/Cargo.lock
+!/rust/crates/
+!/rust/crates/**/Cargo.toml
+!/rust/crates/**/*.rs
+!/rust/crates/**/assets/
+!/rust/crates/**/assets/*.json
+!/rust/apps/
+!/rust/apps/**/Cargo.toml
+!/rust/apps/**/*.rs
+
+# GitHub workflows.
+!/.github/
+!/.github/workflows/
+!/.github/workflows/*.yml
+
+# Release documentation.
+!/docs/
+!/docs/*.md
+
+# Web app source.
+!/web/
+!/web/**
+
+# Web app source.
+!/web/
+!/web/**
+
+# Assets used by the published project.
+!/assets/
+!/assets/**
+
+# Build and release scripts.
+!/scripts/
+!/scripts/*.sh
+!/scripts/*.py
+
+# Desktop Tauri app source and config.
+!/desktop/
+!/desktop/tauri/
+!/desktop/tauri/Cargo.toml
+!/desktop/tauri/Cargo.lock
+!/desktop/tauri/build.rs
+!/desktop/tauri/tauri.conf.json
+!/desktop/tauri/capabilities/
+!/desktop/tauri/capabilities/**
+!/desktop/tauri/icons/
+!/desktop/tauri/icons/**
+!/desktop/tauri/src/
+!/desktop/tauri/src/**/*.rs
+
+# npm package manifests and launcher script.
+!/npm/
+!/npm/**/
+!/npm/**/package.json
+!/npm/**/README.md
+!/npm/packages/memorph/bin/
+!/npm/packages/memorph/bin/*.js
+
+# Python package manifests and source entrypoints.
+!/python/
+!/python/**/
+!/python/**/pyproject.toml
+!/python/**/README.md
+!/python/packages/memorph/src/
+!/python/packages/memorph/src/memorph/
+!/python/packages/memorph/src/memorph/*.py
